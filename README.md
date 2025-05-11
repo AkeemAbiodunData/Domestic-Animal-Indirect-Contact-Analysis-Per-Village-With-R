@@ -1,11 +1,12 @@
 # Domestic-Animal-Indirect-Contact-Analysis-Per-Village-With-R
 
-Project Overview
+## Project Overview
+
 This project analyzes the frequency and types of indirect contact with domestic animals across various villages. The aim is to understand exposure patterns to animal vectors—through means such as feces and secretions—that may be relevant for public health or zoonotic disease transmission studies.
 
 The analysis was conducted using R and the ggplot2 package to visualize respondent data by contact type and village location.
 
-📊 Dataset
+## Dataset
 The dataset contains variables on:
 
 Village – Name of the respondent's village
@@ -18,12 +19,13 @@ contact_lookup – Lookup table for merging contact descriptors
 
 Additional tables for descriptive and long-format transformations
 
-Format
+## Format
 Rows: 792 observations
 
 Variables: 81 (contact dataset), 90 (village dataset), others vary
 
-🔍 Analysis Workflow
+## Analysis Workflow
+
 1. Data Preparation
 Joined contact type descriptions using left_join
 
@@ -38,7 +40,7 @@ Plotted frequency of contact types per village
 
 Used geom_bar(stat = "identity") for accurate scaling
 
-Customized visuals:
+## Customized visuals:
 
 Removed background and grid lines
 
@@ -46,14 +48,14 @@ Angled x-axis text for readability
 
 Color-coded by Contact Type (e.g., F_Faeces, S_Secretion)
 
-Key Insights
+## Key Insights
 Highest frequencies of indirect contact observed in Singo, Thigiri, and Kithunthi
 
 Both contact types are present in most villages
 
 Some villages show a stronger skew toward one type (e.g., feces vs. secretion)
 
-🛠️ Tools Used
+## Tools Used
 R (v4.4.1)
 
 RStudio
@@ -72,7 +74,7 @@ tidyr – Data reshaping
 
 ![Image](https://github.com/user-attachments/assets/ff5e9eef-1793-4f50-b1e6-4790743f16a5)
 
-📂 File Structure
+## File Structure
 contact.csv – Primary dataset
 
 contact_lookup.csv – Lookup table for contact descriptions
